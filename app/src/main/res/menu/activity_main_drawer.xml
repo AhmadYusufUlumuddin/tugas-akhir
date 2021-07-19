@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="Profil" />
+        <item
+            android:id="@+id/nav_beranda"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Beranda" />
+        <item
+            android:id="@+id/nav_pengguna"
+            android:icon="@drawable/ic_baseline_supervisor_account_24"
+            android:title="Pengguna" />
+        <item
+            android:id="@+id/nav_kategori"
+            android:icon="@drawable/ic_baseline_list_24"
+            android:title="Kategori" />
+        <item
+            android:id="@+id/nav_keluar"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Keluar" />
+    </group>
+</menu>

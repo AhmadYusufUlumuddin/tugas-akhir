@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.arkacamataadmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="q">
+        <activity
+            android:name=".main.kategori.KategoriEditActivity"
+            android:label="@string/title_activity_kategori_edit"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".main.kategori.KategoriTambahActivity"
+            android:label="@string/title_activity_kategori_tambah"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.home.KacamataEditActivity"
+            android:label="@string/title_activity_kacamata_edit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.home.KacamataTambahActivity"
+            android:label="@string/title_activity_kacamata_tambah"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.profil.ProfilPasswordActivity"
+            android:label="@string/title_activity_profil_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.profil.ProfilUbahActivity"
+            android:label="@string/title_activity_profil_ubah"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.home.KacamataARActivity"
+            android:label="@string/title_activity_kacamata_a_r"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.home.KacamataDetailActivity"
+            android:label="@string/title_activity_kacamata_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignInActivity"
+            android:label="@string/title_activity_sign_in"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <service android:name=".config.DownloadService" />
+    </application>
+
+</manifest>
